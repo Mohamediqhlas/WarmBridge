@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WarmBridge AI – Voice-First Support Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-title">WarmBridge AI</div>
+      <div class="header-subtitle">
+        A gentle digital support assistant for illiterate and digitally-limited users.
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="info-panel">
+        <h2>About WarmBridge</h2>
+        <p>
+          WarmBridge AI helps users who struggle with reading or technology by giving simple,
+          step-by-step guidance. It focuses on daily tasks like understanding bank messages,
+          filling forms, using mobile apps, and handling stressful digital situations.
+        </p>
+        <p>
+          Type a situation or question below as if you are the user. WarmBridge will answer in
+          very simple language, with calm, clear steps.
+        </p>
+        <div class="badge-row">
+          <span class="badge">Simple language</span>
+          <span class="badge">Step-by-step</span>
+          <span class="badge">Safety-focused</span>
+        </div>
+      </section>
+
+      <section class="chat-panel">
+        <div class="chat-window" id="chatWindow">
+          <!-- Messages will be injected here -->
+        </div>
+
+        <form class="input-row" id="chatForm">
+          <textarea
+            id="userInput"
+            class="input-box"
+            rows="2"
+            placeholder="Example: I got a bank SMS and I don't understand it."
+          ></textarea>
+          <button type="submit" class="send-button">Send</button>
+        </form>
+
+        <div class="status-row">
+          <span id="statusMessage" class="status-message">Ready.</span>
+          <span class="mode-indicator" id="modeIndicator"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      WarmBridge AI · Prototype for inclusive, voice-first digital assistance.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
